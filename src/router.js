@@ -7,12 +7,13 @@ const {
     getNonTerminatedContracts,
 } = require('./controllers/contractsController');
 
-const { getUnpaidJobs } = require('./controllers/jobsController');
+const { getUnpaidJobs, postPayment } = require('./controllers/jobsController');
 
 const router = new Router();
 
 router.get('/contracts/:id', getProfile, getContractByID);
 router.get('/contracts', getProfile, getNonTerminatedContracts);
 router.get('/jobs/unpaid', getProfile, getUnpaidJobs);
+router.post('/jobs/:id/pay', getProfile, postPayment);
 
 module.exports = router;
