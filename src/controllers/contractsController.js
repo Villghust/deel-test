@@ -1,11 +1,11 @@
-const contractRepository = require('../repositories/contractRepository');
+const contractsRepository = require('../repositories/contractsRepository');
 
 module.exports = {
     getContractByID: async (req, res) => {
         const { id: contractId } = req.params;
         const userId = req.profile.id;
 
-        const contract = await contractRepository.getContractByID({
+        const contract = await contractsRepository.getContractByID({
             userId,
             contractId,
         });
@@ -18,7 +18,7 @@ module.exports = {
     getNonTerminatedContracts: async (req, res) => {
         const userId = req.profile.id;
 
-        const contracts = await contractRepository.getNonTerminatedContracts({
+        const contracts = await contractsRepository.getNonTerminatedContracts({
             userId,
         });
 
