@@ -11,6 +11,7 @@
     "scripts": {
         "start": "nodemon ./src/server.js",
         "seed": "node ./scripts/seedDb.js",
+        "test:unit": "DB_STORAGE=:memory: jest --runInBand",
         "lint": "eslint {src,scripts}/**/*.js",
         "lint-fix": "eslint --fix {src,scripts}/**/*.js",
         "prepare": "husky install"
@@ -21,8 +22,10 @@
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-prettier": "^4.2.1",
         "husky": "^8.0.1",
+        "jest": "^28.1.2",
         "nodemon": "1.19.1",
-        "prettier": "^2.7.1"
+        "prettier": "^2.7.1",
+        "supertest": "^6.2.4"
     },
     "engines": {
         "node": ">=10.16.3"
