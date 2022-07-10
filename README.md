@@ -13,6 +13,8 @@ See ya soon!
 
 [Postman Collection](https://github.com/Villghust/deel-test/blob/main/deel_test.postman_collection.json)
 
+![Test Coverage](coverage.png)
+
 # DEEL BACKEND TASK
 
 💫 Welcome! 🎉
