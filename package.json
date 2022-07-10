@@ -11,7 +11,7 @@
     "scripts": {
         "start": "nodemon ./src/server.js",
         "seed": "node ./scripts/seedDb.js",
-        "test:unit": "DB_STORAGE=:memory: jest --runInBand",
+        "test:unit": "DB_STORAGE=:memory: jest --runInBand --coverage",
         "lint": "eslint {src,scripts}/**/*.js",
         "lint-fix": "eslint --fix {src,scripts}/**/*.js",
         "prepare": "husky install"
