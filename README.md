@@ -4,7 +4,7 @@ Hello Deel!
 My name is Márcio, i`m participating in this test to become your new Backend Engineer.
 I like these kind of challenges and i`m a completionist. With the 3 hours i had,
 unfortunately I couldn`t take all the care I usually do (complete unit testing,
-swagger definition, better folder structuring and so on). That said, I hope this
+swagger definition, better folder structuring, docker and so on). That said, I hope this
 test shows at least some of my understanding of Node.js, Javascript and SQL databases.
 
 For more, feel free to see other projects on my Github and also linkedin page
