@@ -85,9 +85,9 @@ module.exports = {
         });
 
         return clients.map((job) => ({
-            name: `${job.Contract.Client.firstName} ${job.Contract.Client.lastName}`,
-            total_paid: job.paid,
-            client_id: job.Contract.Client.id,
+            fullName: `${job.Contract.Client.firstName} ${job.Contract.Client.lastName}`,
+            paid: job.paid,
+            id: job.Contract.Client.id,
         }));
     },
 };
